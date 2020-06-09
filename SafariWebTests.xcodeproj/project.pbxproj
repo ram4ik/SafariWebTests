@@ -13,7 +13,18 @@
 		1DACDF89248FFED900C7089E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DACDF88248FFED900C7089E /* Assets.xcassets */; };
 		1DACDF8C248FFED900C7089E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DACDF8B248FFED900C7089E /* Preview Assets.xcassets */; };
 		1DACDF8F248FFED900C7089E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DACDF8D248FFED900C7089E /* LaunchScreen.storyboard */; };
+		1DACDF9D248FFF0300C7089E /* SafariWebTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DACDF9C248FFF0300C7089E /* SafariWebTestsUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DACDF9F248FFF0300C7089E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DACDF77248FFED600C7089E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DACDF7E248FFED600C7089E;
+			remoteInfo = SafariWebTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1DACDF7F248FFED700C7089E /* SafariWebTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariWebTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		1DACDF8B248FFED900C7089E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1DACDF8E248FFED900C7089E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DACDF90248FFED900C7089E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DACDF9A248FFF0300C7089E /* SafariWebTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafariWebTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DACDF9C248FFF0300C7089E /* SafariWebTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebTestsUITests.swift; sourceTree = "<group>"; };
+		1DACDF9E248FFF0300C7089E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1DACDF7C248FFED600C7089E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DACDF97248FFF0300C7089E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				1DACDF81248FFED700C7089E /* SafariWebTests */,
+				1DACDF9B248FFF0300C7089E /* SafariWebTestsUITests */,
 				1DACDF80248FFED700C7089E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				1DACDF7F248FFED700C7089E /* SafariWebTests.app */,
+				1DACDF9A248FFF0300C7089E /* SafariWebTestsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +98,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1DACDF9B248FFF0300C7089E /* SafariWebTestsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1DACDF9C248FFF0300C7089E /* SafariWebTestsUITests.swift */,
+				1DACDF9E248FFF0300C7089E /* Info.plist */,
+			);
+			path = SafariWebTestsUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,6 +127,24 @@
 			productReference = 1DACDF7F248FFED700C7089E /* SafariWebTests.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1DACDF99248FFF0300C7089E /* SafariWebTestsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DACDFA1248FFF0300C7089E /* Build configuration list for PBXNativeTarget "SafariWebTestsUITests" */;
+			buildPhases = (
+				1DACDF96248FFF0300C7089E /* Sources */,
+				1DACDF97248FFF0300C7089E /* Frameworks */,
+				1DACDF98248FFF0300C7089E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DACDFA0248FFF0300C7089E /* PBXTargetDependency */,
+			);
+			name = SafariWebTestsUITests;
+			productName = SafariWebTestsUITests;
+			productReference = 1DACDF9A248FFF0300C7089E /* SafariWebTestsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -107,6 +157,10 @@
 				TargetAttributes = {
 					1DACDF7E248FFED600C7089E = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					1DACDF99248FFF0300C7089E = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 1DACDF7E248FFED600C7089E;
 					};
 				};
 			};
@@ -124,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				1DACDF7E248FFED600C7089E /* SafariWebTests */,
+				1DACDF99248FFF0300C7089E /* SafariWebTestsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +191,13 @@
 				1DACDF8F248FFED900C7089E /* LaunchScreen.storyboard in Resources */,
 				1DACDF8C248FFED900C7089E /* Preview Assets.xcassets in Resources */,
 				1DACDF89248FFED900C7089E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DACDF98248FFF0300C7089E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +214,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1DACDF96248FFF0300C7089E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DACDF9D248FFF0300C7089E /* SafariWebTestsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DACDFA0248FFF0300C7089E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DACDF7E248FFED600C7089E /* SafariWebTests */;
+			targetProxy = 1DACDF9F248FFF0300C7089E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1DACDF8D248FFED900C7089E /* LaunchScreen.storyboard */ = {
@@ -320,6 +398,44 @@
 			};
 			name = Release;
 		};
+		1DACDFA2248FFF0300C7089E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				INFOPLIST_FILE = SafariWebTestsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.SafariWebTestsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SafariWebTests;
+			};
+			name = Debug;
+		};
+		1DACDFA3248FFF0300C7089E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				INFOPLIST_FILE = SafariWebTestsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.SafariWebTestsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SafariWebTests;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +453,15 @@
 			buildConfigurations = (
 				1DACDF94248FFED900C7089E /* Debug */,
 				1DACDF95248FFED900C7089E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DACDFA1248FFF0300C7089E /* Build configuration list for PBXNativeTarget "SafariWebTestsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DACDFA2248FFF0300C7089E /* Debug */,
+				1DACDFA3248FFF0300C7089E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
